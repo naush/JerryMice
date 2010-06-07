@@ -1,0 +1,4 @@
+export GEM_HOME=`pwd`/localgems
+export GEM_PATH=`pwd`/localgems
+echo GEM_HOME=$GEM_HOME
+echo GEM_PATH=$GEM_PATH

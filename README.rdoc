@@ -1,0 +1,38 @@
+==JerryMice v 0.1.0
+
+=== Install:
+
+  sudo rake manifest
+  sudo rake install
+
+Alternatively
+
+  gem install --local /path/to/jerrymice-0.1.0.gem
+
+=== Rakefile:
+
+Add the following two lines of code to your Rakefile.
+
+  require 'jerrymice'
+  JerryMice.load
+
+=== Config:
+
+Edit <em>lib/config/jerrymice.rb</em>.
+
+=== Deploy:
+
+  rake jerry:gems
+  warble config
+
+Edit <em>config/warble.rb</em> to add dependencies
+
+  warble
+  rake jerry:deploy
+
+=== Task:
+
+  rake jerry:deploy     # Upload war to tomcat/webapps/
+  rake jerry:gems       # Install gems in local directory
+  rake jerry:gitignore  # Create .gitignore file
+  rake jerry:war        # Run warble script
